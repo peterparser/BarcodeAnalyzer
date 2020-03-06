@@ -26,7 +26,7 @@ def main(barcode_directory):
     f.write(header)
 
     #Cycle over the given images in the ./resources folder
-    for file in glob.glob(barcode_directory + "/I25-MASTER GRADE IMGB.BMP"):
+    for file in glob.glob(barcode_directory + "*.BMP"):
 
         #print()
         #print('|' * 80)
