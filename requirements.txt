@@ -1,0 +1,6 @@
+numpy
+scipy
+colorama
+matplotlib
+opencv-python
+opencv-contrib-python
