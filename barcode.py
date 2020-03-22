@@ -292,7 +292,6 @@ class Barcode:
 
         '''PLOT OF SCANLINES'''
         colored_roi_scanlines = cv2.cvtColor(self.roi.copy(), cv2.COLOR_GRAY2RGB)
-        lines
         for scan_line in lines:
             cv2.line(colored_roi_scanlines, (0, scan_line), (self.roi.shape[1], scan_line), (255,255,255), thickness=4)
 
