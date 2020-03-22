@@ -105,7 +105,7 @@ class Barcode:
 
     def set_roi(self):
         """
-            Uses the __set_roi__ method and reuses it after having rotated the image 90 degrees clockwise in case 
+            Uses the main_set_roi method and reuses it after having rotated the image 90 degrees clockwise in case 
             the barcode orientation wasn't horizontal
 
         """
@@ -190,7 +190,7 @@ class Barcode:
             (real_x, real_y), (real_width, real_height), angle = rect
             box = cv2.boxPoints(rect)
             box = np.int0(box)
-            #We find x and y which are the coordinates of the top-left corner of the roi, then w and h which are the width and height of the roi
+
             x, y, width, height = cv2.boundingRect(box)
 
             #Depending on the bar's angle sometimes height and width are inverted, so we reinvert them
